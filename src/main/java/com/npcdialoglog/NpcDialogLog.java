@@ -1,6 +1,7 @@
 package com.npcdialoglog;
 
 import com.google.inject.Provides;
+
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.Collections;

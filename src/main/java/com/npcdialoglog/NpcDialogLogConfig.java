@@ -35,38 +35,36 @@ public interface NpcDialogLogConfig extends Config
 	)
 	String chatDialogSection = "chatDialog";
 
-	@ConfigSection(
-		name = "Overhead Text",
-		description = "All options that enable overhead text dialog",
-		position = 1,
-		closedByDefault = false
-	)
-	String overheadTextSection = "overheadText";
+    @ConfigSection(
+            name = "Overhead Text",
+            description = "All options that enable overhead text dialog",
+            position = 1,
+            closedByDefault = false
+    )
+    String overheadTextSection = "overheadText";
 
-	@ConfigItem(
-		keyName = "displayPlayerDialog",
-		name = "Player Dialog",
-		description = "Add player dialog to chat",
-		section  =  chatDialogSection,
-		position = 0
-	)
-	default boolean displayPlayerDialog()
-	{
-		return true;
-	}
+    @ConfigItem(
+            keyName = "displayPlayerDialog",
+            name = "Player Dialog",
+            description = "Add player dialog to chat",
+            section = chatDialogSection,
+            position = 0
+    )
+    default boolean displayPlayerDialog() {
+        return true;
+    }
 
-	@ConfigItem(
-		keyName = "displayNpcDialog",
-		name = "NPC Dialog",
-		description = "Add NPC dialog to chat",
-		section  =  chatDialogSection,
-		position = 1
+    @ConfigItem(
+            keyName = "displayNpcDialog",
+            name = "NPC Dialog",
+            description = "Add NPC dialog to chat",
+            section = chatDialogSection,
+            position = 1
 
-	)
-	default boolean displayNpcDialog()
-	{
-		return true;
-	}
+    )
+    default boolean displayNpcDialog() {
+        return true;
+    }
 
 	@ConfigItem(
 		keyName = "displayMessageBoxDialog",
@@ -88,18 +86,17 @@ public interface NpcDialogLogConfig extends Config
 		position = 0
 	)
 
-	default boolean displayPlayerOverheadText()
-	{
-		return false;
-	}
+    default boolean displayPlayerOverheadText() {
+        return false;
+    }
 
-	@ConfigItem(
-		keyName = "displayNpcOverheadText",
-		name = "NPC Overhead Text",
-		description = "Add dialog over the head of npcs",
-		section  =  overheadTextSection,
-		position = 1
-	)
+    @ConfigItem(
+            keyName = "displayNpcOverheadText",
+            name = "NPC Overhead Text",
+            description = "Add dialog over the head of npcs",
+            section = overheadTextSection,
+            position = 1
+    )
 
 	default boolean displayNpcOverheadText()
 	{
